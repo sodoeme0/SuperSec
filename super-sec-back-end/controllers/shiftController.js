@@ -8,7 +8,7 @@ const ShiftTemplate = require('../models/shiftTemplate')
 
 exports.getAllShifts = async (req, res) => {
     // Get all shifts from DB
-    const shifts = await Shift.find()
+    const shifts = await Shift.find().populate("template").populate("personal")
 
     // If no shifts
     if (!shifts.length) {
@@ -46,7 +46,7 @@ exports.getShift = async (req, res) => {
 exports.addNewShift = async (req, res) => {
     
     let shift = new Shift(req.body)
- 
+    
     console.log(req.body)
 
     // confirm shift data
@@ -80,7 +80,7 @@ exports.addNewShift = async (req, res) => {
 
     }
 
-     
+    
 
     const status = await Shift.create(shift)
     if (status) {

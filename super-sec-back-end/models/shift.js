@@ -12,14 +12,14 @@ const personalSchema = new mongoose.Schema(
         template:{
             type: mongoose.Schema.Types.ObjectId,
             required: true,
-            ref: "ShiftTemplates"
+            ref: "ShiftTemplate"
         },
         start:{
-            type: String,
+            type: Date,
             required: true
         },
         end:{
-            type: String,
+            type: Date,
             required: true
         },
         active:{

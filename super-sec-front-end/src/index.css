@@ -1,0 +1,57 @@
+/* || VARIABLES */
+
+:root {
+    /* COLORS */
+    --LANDINGBG: #D9D9D9;
+    --TRIM-RED: #A62828;
+    --TXT-WHITE: #FBF2F2;
+    --DASHBG: #F5D6D6;
+    --ACTIVE: #14E010;
+    --NON-ACTIVE: #FA0909;
+    
+  }
+
+  table, th, tr, td {
+    border: 1px solid black;
+    
+  }
+
+
+
+
+.landing {
+    border-spacing: 30px;
+    background-color: var(--LANDINGBG);
+
+  }
+  
+  .landing-right, .landing-left{
+    background-color: var(--LANDINGBG);
+    width: 50%;
+
+  }
+
+  .landing-left{
+    text-align: center;
+
+  }
+  .landing-right{
+    text-align: center;
+
+  }
+
+  Link{
+    text-decoration: none;
+  }
+ 
+  .scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+    .h-md-100 { height: 100vh; }
+.bg-grey{ background-color: var(--LANDINGBG); }
+.btn-round { border-radius: 30px; }
+.bg-indigo { background: indigo; }
+.text-cyan { color: #35bdff; }
